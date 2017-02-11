@@ -1,0 +1,24 @@
+{
+  "name": "url-shortener-microservice",
+  "version": "1.0.0",
+  "description": "1. I can pass a URL as a parameter and I will receive a shortened URL in the JSON response. 2. If I pass an invalid URL that doesn't follow the valid http://www.example.com format, the JSON response will contain an error instead. 3. When I visit that shortened URL, it will redirect me to my original link.",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/estermer/url-shortener-microservice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/estermer/url-shortener-microservice/issues"
+  },
+  "homepage": "https://github.com/estermer/url-shortener-microservice#readme",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "express": "^4.14.1",
+    "mongoose": "^4.8.2"
+  }
+}
