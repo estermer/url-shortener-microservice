@@ -9,7 +9,7 @@ mongoose.connect(mongoURI);
 mongoose.Promise = global.Promise;
 
 app.get('/', (req, res) => {
-  res.json({'status': 200, 'message': Url});
+  res.json({'status': 200, 'message': "Welcome to my url shortener microservice."});
 });
 
 app.get('/new/:path', (req, res) => {
@@ -22,7 +22,7 @@ app.get('/new/:path', (req, res) => {
     .then((url) => {
       res.json({
         "original_url": req.params.path,
-        "short_url": `http://localhost:3001/${url._id}`
+        "short_url": `https://stermer-short-url.herokuapp.com/${url._id}`
       });
     })
     .catch((err) => {
